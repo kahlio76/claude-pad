@@ -1,0 +1,11 @@
+# Wokwi simulator project (VS Code extension: https://docs.wokwi.com/vscode/getting-started).
+# Wokwi doesn't compile anything, so build the firmware first (see ../README.md).
+# Open this folder (firmware/pico) in VS Code, then: F1 -> "Wokwi: Start Simulator".
+[wokwi]
+version = 1
+firmware = 'build/claude_pad.uf2'
+elf = 'build/claude_pad.elf'
+
+# Forward the simulated Pico's serial port to your Mac so padd can talk to it:
+#   rfc2217://localhost:4000
+rfc2217ServerPort = 4000

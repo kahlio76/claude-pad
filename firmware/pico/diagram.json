@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "author": "Claude Pad",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico",
+      "id": "pico",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_s1",
+      "top": -20,
+      "left": 190,
+      "attrs": {
+        "color": "white",
+        "label": "S1",
+        "key": "1"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_s2",
+      "top": -20,
+      "left": 270,
+      "attrs": {
+        "color": "white",
+        "label": "S2",
+        "key": "2"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_s3",
+      "top": -20,
+      "left": 350,
+      "attrs": {
+        "color": "white",
+        "label": "S3",
+        "key": "3"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_s4",
+      "top": -20,
+      "left": 430,
+      "attrs": {
+        "color": "white",
+        "label": "S4",
+        "key": "4"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_approve",
+      "top": 55,
+      "left": 190,
+      "attrs": {
+        "color": "green",
+        "label": "Approve",
+        "key": "a"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_always",
+      "top": 55,
+      "left": 270,
+      "attrs": {
+        "color": "blue",
+        "label": "Always",
+        "key": "w"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_deny",
+      "top": 55,
+      "left": 350,
+      "attrs": {
+        "color": "red",
+        "label": "Deny",
+        "key": "d"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_mode",
+      "top": 55,
+      "left": 430,
+      "attrs": {
+        "color": "yellow",
+        "label": "Mode",
+        "key": "m"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_talk",
+      "top": 130,
+      "left": 190,
+      "attrs": {
+        "color": "white",
+        "label": "Talk",
+        "key": "t"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_stop",
+      "top": 130,
+      "left": 270,
+      "attrs": {
+        "color": "red",
+        "label": "Stop",
+        "key": "s"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "k_fn",
+      "top": 130,
+      "left": 350,
+      "attrs": {
+        "color": "black",
+        "label": "FN",
+        "key": "f"
+      }
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "led1",
+      "top": 230,
+      "left": 200,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "led2",
+      "top": 230,
+      "left": 260,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "led3",
+      "top": 230,
+      "left": 320,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "led4",
+      "top": 230,
+      "left": 380,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "pico:GP2",
+      "k_s1:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP3",
+      "k_s2:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP4",
+      "k_s3:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP5",
+      "k_s4:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP6",
+      "k_approve:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP7",
+      "k_always:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP8",
+      "k_deny:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP9",
+      "k_mode:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP10",
+      "k_talk:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP11",
+      "k_stop:1.l",
+      "green",
+      []
+    ],
+    [
+      "pico:GP12",
+      "k_fn:1.l",
+      "green",
+      []
+    ],
+    [
+      "k_s1:2.l",
+      "k_s2:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_s2:2.l",
+      "k_s3:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_s3:2.l",
+      "k_s4:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_s4:2.l",
+      "k_approve:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_approve:2.l",
+      "k_always:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_always:2.l",
+      "k_deny:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_deny:2.l",
+      "k_mode:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_mode:2.l",
+      "k_talk:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_talk:2.l",
+      "k_stop:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_stop:2.l",
+      "k_fn:2.l",
+      "black",
+      []
+    ],
+    [
+      "k_fn:2.l",
+      "pico:GND.1",
+      "black",
+      []
+    ],
+    [
+      "pico:GP16",
+      "led1:DIN",
+      "orange",
+      []
+    ],
+    [
+      "led1:DOUT",
+      "led2:DIN",
+      "orange",
+      []
+    ],
+    [
+      "led1:VDD",
+      "led2:VDD",
+      "red",
+      []
+    ],
+    [
+      "led1:VSS",
+      "led2:VSS",
+      "black",
+      []
+    ],
+    [
+      "led2:DOUT",
+      "led3:DIN",
+      "orange",
+      []
+    ],
+    [
+      "led2:VDD",
+      "led3:VDD",
+      "red",
+      []
+    ],
+    [
+      "led2:VSS",
+      "led3:VSS",
+      "black",
+      []
+    ],
+    [
+      "led3:DOUT",
+      "led4:DIN",
+      "orange",
+      []
+    ],
+    [
+      "led3:VDD",
+      "led4:VDD",
+      "red",
+      []
+    ],
+    [
+      "led3:VSS",
+      "led4:VSS",
+      "black",
+      []
+    ],
+    [
+      "pico:VBUS",
+      "led1:VDD",
+      "red",
+      []
+    ],
+    [
+      "led1:VSS",
+      "pico:GND.1",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
